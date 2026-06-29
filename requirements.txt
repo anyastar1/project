@@ -1,0 +1,9 @@
+torch
+torchvision
+torchmetrics
+pyyaml
+numpy
+pandas
+matplotlib
+tqdm
+pycocotools
