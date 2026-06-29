@@ -1,0 +1,3 @@
+model,mAP@0.5,precision,recall,f1
+yolo11,0.8125,0.8125,0.3948,0.5314
+faster_rcnn,0.5878,0.5878,0.9137,0.7154
