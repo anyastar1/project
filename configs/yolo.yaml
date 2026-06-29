@@ -1,0 +1,27 @@
+# configs/yolo_default.yaml
+
+project:
+  name: cv-transport-detection
+  seed: 42
+  device: cpu
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  logs: results/logs
+  checkpoints: results/checkpoints
+  tables: results/tables
+
+data:
+  dataset_name: kitti
+  images_dir: "data/raw/kitti/yolo_dataset/images/val"
+  labels_dir: "data/raw/kitti/yolo_dataset/labels/val"
+  split_dir: "data/raw/kitti/splits"
+  img_size: 640 
+  num_workers: 2
+  classes: ["Car", "Pedestrian", "Cyclist"]
+
+training:
+  epochs: 3
+  batch_size: 1
+  learning_rate: 0.0003
